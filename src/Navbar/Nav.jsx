@@ -36,7 +36,7 @@ const Nav = () => {
                 </div>
             </div>
 
-            <div className={`mobile z-0 bg-white ${status?'':'hidden'}`}>
+            <div className={`mobile z-0 bg-white ${status ? 'block' : 'hidden'}`}>
                 <ul className='ml-12 my-2   md:hidden inline-block text-xl  transition-all duration-100 ease-in '>
                     <li className='hover:underline'>Microsoft 365</li>
                     <li className='hover:underline'>Teams</li>
@@ -47,9 +47,9 @@ const Nav = () => {
                 </ul>
             </div>
             <Home />
-            <div className='flex justify-end mr-28 cursor-pointer'>
+            <div className='flex justify-end mr-[69px]  lg:mr-[93px] cursor-pointer'>
                 <ReactWhatsapp number='+91 7398081092' message='Hey! I want to talk you' action='send'>
-                    <img className='w-[60px] rounded-full  md:w-[95px] fixed  bottom-2' src="./Whatsaap web.jpeg" alt="" />
+                    <img className='w-[60px] rounded-full  md:w-[80px] fixed  bottom-2' src="./Whatsaap web.jpeg" alt="" />
                 </ReactWhatsapp>
             </div>
         </>
